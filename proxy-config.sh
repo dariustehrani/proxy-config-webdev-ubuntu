@@ -1,3 +1,6 @@
+#!/bin/bash
+# This script configures your Ubuntu with proxy settings.
+
 # configure the proxy here.
 export PROXYSETTING="http://YOURPROXY:PORT/"
 export NOPROXYSETTING="localhost,127.0.0.1,::1,10.0.0.0/8,172.16.0.0/16,192.168.0.0/16"
@@ -37,7 +40,7 @@ sudo cat <<EOT > /etc/docker/daemon.json
 EOT
 
 # uncomment the following section if you use zscaler
-# this will import the zscaler private certificate into the certificate store
+# This will import the zscaler private certificate into the certificate store.
 
 # mkdir /usr/local/share/ca-certificates/extra/
 # sudo cat <<EOT > /usr/local/share/ca-certificates/extra/zscaler.cert.crt
